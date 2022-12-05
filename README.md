@@ -1,1 +1,3 @@
-# PIC-16A-Project-Classifying-Fake-Jobs
+# Classifying-Fake-Jobs
+## Group Members: Zoe Lu and Cheslea Chen
+
