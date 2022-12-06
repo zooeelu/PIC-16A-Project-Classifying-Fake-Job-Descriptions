@@ -20,9 +20,7 @@ The Demo File (demo_file) walks the audience through the process of some basic e
 
 The first step in this file was running some basic exploratory data analysis with barcharts showing the counts of different columns in the data. For example, two barcharts were created with the first one showing the counts (y axis) of job postings that were fake or real (x axis). The second barchart shows the counts (y axis) of employment type (x axis). From here we can see that the data has majority real job postings and most of them were full-time jobs.
 
-<img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png">
-
-<img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
+<img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png"> <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
 
 
 Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we .......
@@ -33,8 +31,14 @@ As we can see, before we processed the job description column, the descriptions 
 After processing the job description columns, the descriptions no longer have stopwords, punctuations, etc and look like this:
 <img width="987" alt="Screen Shot 2022-12-05 at 5 53 07 PM" src="https://user-images.githubusercontent.com/97188472/205789221-258f57f2-5c20-4934-9fd6-8438404c8aa1.png">
 
-We can also see in the word cloud below the most common types of words used. We did this by joining all the entries of the processed description column so that the WordCloud() function could count the frequencies and generate the plot. 
+We can also see in the word cloud below the most common types of words used. We did this by joining all the entries of the processed description column so that the WordCloud() function could count the frequencies of the words that appeared and generate the plot. 
 <img width="686" alt="Screen Shot 2022-12-05 at 5 56 01 PM" src="https://user-images.githubusercontent.com/97188472/205789655-035c2e8c-899f-41d8-bf62-d27290b0d266.png">
+
+After we processed the job descriptions, we were ready to use them in our classification models. 
+
+We created a function called ___ that would fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. 
+
+~~~~~insert results~~~~~~~~~~~
 
 #### Scopes and Limitations
 For this project we ran logistic regression, support vector machine, and decision trees classification models. An obstacle we ran into in the beginning was cleaning/ conducting the pre-processing step for the job description column. These obstacles included things like taking out puncuation and removing stop words. This process took us a while to figure out but we eventually figured it out by reading up on documentation online as well as looking at lecture notes. Some limitations of this project was that the data we had was heavily skewed where most of the job postings were not fradulent. Only about 800 of the job postings were actually fraudulent and this may have skewed/ hindered our model's classification results. We also did not run more data on the models to better train them.
