@@ -23,7 +23,7 @@ The first step in this file was running some basic exploratory data analysis wit
 <img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png"> <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
 
 
-Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we .......
+Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we created a class called Pre_Process(). This class will remove stop words, punctuations, etc. so that we're only left wit important words.
 
 As we can see, before we processed the job description column, the descriptions have no punctuations, stopwords, etc and look like this:
 <img width="979" alt="Screen Shot 2022-12-05 at 5 51 57 PM" src="https://user-images.githubusercontent.com/97188472/205789061-40a1b4f2-2d8f-421c-98f4-8d3e007ac49e.png">
@@ -34,14 +34,16 @@ After processing the job description columns, the descriptions no longer have st
 We can also see in the word cloud below the most common types of words used. We did this by joining all the entries of the processed description column so that the WordCloud() function could count the frequencies of the words that appeared and generate the plot. 
 <img width="686" alt="Screen Shot 2022-12-05 at 5 56 01 PM" src="https://user-images.githubusercontent.com/97188472/205789655-035c2e8c-899f-41d8-bf62-d27290b0d266.png">
 
-After we processed the job descriptions, we were ready to use them in our classification models. 
+After we processed the job descriptions, we then created a function called tfidf_train_test_split() that would calculate the importance of each word (TF-IDF) and also split our data into testing and training subsets. Below is an image of some of the words and their TF-IDF Scores.
+<img width="175" alt="Screen Shot 2022-12-05 at 6 18 34 PM" src="https://user-images.githubusercontent.com/97188472/205792480-1cc5e6f9-1f84-4cc6-9e20-dc8db97e9d6d.png">
 
-We created a function called .... that would fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
+We created fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
 <img width="347" alt="Screen Shot 2022-12-05 at 6 04 22 PM" src="https://user-images.githubusercontent.com/97188472/205790676-8cb56f39-0e08-4f19-99eb-91ef2a5cf594.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 04 44 PM" src="https://user-images.githubusercontent.com/97188472/205790723-4123ccc8-0b43-4ccf-b520-ae1a45406b12.png">
 
-Next we ran a logistic regression model by creating a function called ... and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
+Next we ran a logistic regression model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
 <img width="342" alt="Screen Shot 2022-12-05 at 6 07 11 PM" src="https://user-images.githubusercontent.com/97188472/205791043-c977cc3d-9c81-4507-8fb9-8303b7b010ea.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 07 20 PM" src="https://user-images.githubusercontent.com/97188472/205791054-0aaabf1c-bd6f-4e65-a4d3-cdefae8024eb.png">
 
+As a conclusion we compared the two different models to decide which model would be better to use to classify whether a job posting is fake or not. We chose a model based on the accuracy as well as the type of model and if one fits better for the type of data we have. 
 
 
 #### Scopes and Limitations
