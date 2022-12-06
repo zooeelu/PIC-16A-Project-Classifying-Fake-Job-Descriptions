@@ -45,6 +45,7 @@ Once our data was clean and split, we ran a Support Vector Machine model and use
 <img width="347" alt="Screen Shot 2022-12-05 at 6 04 22 PM" src="https://user-images.githubusercontent.com/97188472/205790676-8cb56f39-0e08-4f19-99eb-91ef2a5cf594.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 04 44 PM" src="https://user-images.githubusercontent.com/97188472/205790723-4123ccc8-0b43-4ccf-b520-ae1a45406b12.png">
 
 Next we ran a logistic regression model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
+
 <img width="342" alt="Screen Shot 2022-12-05 at 6 07 11 PM" src="https://user-images.githubusercontent.com/97188472/205791043-c977cc3d-9c81-4507-8fb9-8303b7b010ea.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 07 20 PM" src="https://user-images.githubusercontent.com/97188472/205791054-0aaabf1c-bd6f-4e65-a4d3-cdefae8024eb.png">
 
 As a conclusion we compared the two different models to decide which model would be better to use to classify whether a job posting is fake or not. We chose a model based on the accuracy as well as the type of model and if one fits better for the type of data we have. 
