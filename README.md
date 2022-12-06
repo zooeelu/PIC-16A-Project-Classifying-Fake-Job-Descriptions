@@ -6,7 +6,6 @@
 #### Dataset Description
 The "Real or Fake" (https://www.kaggle.com/datasets/whenamancodes/real-or-fake-jobs) dataset we used was taken from Kaggle and has around 17,880 different job posting with 866 of them being fraduelnt postings. Various different types of columns are included including textual columns such as job posting description, location, title, etc. There were also numerical columns such as salary as well as binary columns such as if they would need to telecommute or answer screening questions. This dataset can be used in various ways such as training a model based on certain features to classify whether a job posting is fraudlent or not.
 
-
 #### Packages Used: 
 1. numpy (1.23.0)
 2. pandas (1.5.2)
@@ -14,8 +13,10 @@ The "Real or Fake" (https://www.kaggle.com/datasets/whenamancodes/real-or-fake-j
 4. re (3.11.0)
 5. pickle (3.11.0)
 6. sklearn (1.1.3)
+7. wordcloud (1.8.2.2)
 
-#### Demo File Description
+#### Demo File Description/ Instructions
+
 
 
 #### Scopes and Limitations
@@ -28,9 +29,4 @@ When it comes to ethical implications, if this type of algorithm were to be used
 To better improve this project, some future things we can do to improve are to balance the dataset so that the data is not so heavily skewed with way more entries for non-fraudulent data than fraudulent data. We can also try out more models and train it on more data to ensure that our model can predict/ classify well to prevent misclassification from occuriring at a high rate. With a lower misclassifiction rate, we hope this well decrease the chances of someone applying to a fake job and getting scammed as well. 
 
 #### References and Acknowledgements
-For the code base aspect of the project, Chelsea worked on cleaning the datset, especially the textual data, and ran the different classification models while Zoe generated the plots. For the READme and 
-
-
-
-
-
+We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted!
