@@ -42,6 +42,7 @@ After we processed the job descriptions, we then created a function called tfidf
 <img width="175" alt="Screen Shot 2022-12-05 at 6 18 34 PM" src="https://user-images.githubusercontent.com/97188472/205792480-1cc5e6f9-1f84-4cc6-9e20-dc8db97e9d6d.png">
 
 Once our data was clean and split, we ran a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
+
 <img width="347" alt="Screen Shot 2022-12-05 at 6 04 22 PM" src="https://user-images.githubusercontent.com/97188472/205790676-8cb56f39-0e08-4f19-99eb-91ef2a5cf594.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 04 44 PM" src="https://user-images.githubusercontent.com/97188472/205790723-4123ccc8-0b43-4ccf-b520-ae1a45406b12.png">
 
 Next we ran a logistic regression model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
@@ -61,4 +62,4 @@ When it comes to ethical implications, if this type of algorithm were to be used
 To better improve this project, some future things we can do to improve are to balance the dataset so that the data is not so heavily skewed with way more entries for non-fraudulent data than fraudulent data. We can also try out more models and train it on more data to ensure that our model can predict/ classify well to prevent misclassification from occuriring at a high rate. With a lower misclassifiction rate, we hope this well decrease the chances of someone applying to a fake job and getting scammed as well. 
 
 #### References and Acknowledgements
-We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted! We would also like the credit Kaggle for providing the data.
+We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted! We would also like to credit our STATS 101C professor Shrirong Xu's text cleaning We would also like the credit Kaggle for providing the data.
