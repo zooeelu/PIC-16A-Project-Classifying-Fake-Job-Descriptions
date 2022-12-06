@@ -26,18 +26,22 @@ The first step in this file was running some basic exploratory data analysis wit
 Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we created a class called Pre_Process(). This class will remove stop words, punctuations, etc. so that we're only left wit important words.
 
 As we can see, before we processed the job description column, the descriptions have no punctuations, stopwords, etc and look like this:
+
 <img width="979" alt="Screen Shot 2022-12-05 at 5 51 57 PM" src="https://user-images.githubusercontent.com/97188472/205789061-40a1b4f2-2d8f-421c-98f4-8d3e007ac49e.png">
 
 After processing the job description columns, the descriptions no longer have stopwords, punctuations, etc and look like this:
+
 <img width="987" alt="Screen Shot 2022-12-05 at 5 53 07 PM" src="https://user-images.githubusercontent.com/97188472/205789221-258f57f2-5c20-4934-9fd6-8438404c8aa1.png">
 
 We can also see in the word cloud below the most common types of words used. We did this by joining all the entries of the processed description column so that the WordCloud() function could count the frequencies of the words that appeared and generate the plot. 
+
 <img width="686" alt="Screen Shot 2022-12-05 at 5 56 01 PM" src="https://user-images.githubusercontent.com/97188472/205789655-035c2e8c-899f-41d8-bf62-d27290b0d266.png">
 
 After we processed the job descriptions, we then created a function called tfidf_train_test_split() that would calculate the importance of each word (TF-IDF) and also split our data into testing and training subsets. Below is an image of some of the words and their TF-IDF Scores.
+
 <img width="175" alt="Screen Shot 2022-12-05 at 6 18 34 PM" src="https://user-images.githubusercontent.com/97188472/205792480-1cc5e6f9-1f84-4cc6-9e20-dc8db97e9d6d.png">
 
-We created fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
+Once our data was clean and split, we ran a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
 <img width="347" alt="Screen Shot 2022-12-05 at 6 04 22 PM" src="https://user-images.githubusercontent.com/97188472/205790676-8cb56f39-0e08-4f19-99eb-91ef2a5cf594.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 04 44 PM" src="https://user-images.githubusercontent.com/97188472/205790723-4123ccc8-0b43-4ccf-b520-ae1a45406b12.png">
 
 Next we ran a logistic regression model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
