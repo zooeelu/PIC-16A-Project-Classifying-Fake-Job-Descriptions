@@ -61,4 +61,4 @@ When it comes to ethical implications, if this type of algorithm were to be used
 To better improve this project, some future things we can do to improve are to balance the dataset so that the data is not so heavily skewed with way more entries for non-fraudulent data than fraudulent data. We can also try out more models and train it on more data to ensure that our model can predict/ classify well to prevent misclassification from occuriring at a high rate. With a lower misclassifiction rate, we hope this well decrease the chances of someone applying to a fake job and getting scammed as well. 
 
 #### References and Acknowledgements
-We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted!
+We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted! We would also like the credit Kaggle for providing the data.
