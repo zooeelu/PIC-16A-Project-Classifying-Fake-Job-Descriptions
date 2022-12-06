@@ -23,7 +23,7 @@ The first step in this file was running some basic exploratory data analysis wit
 <img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png"> <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
 
 
-Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we created a class called Pre_Process(). This class will remove stop words, punctuations, etc. so that we're only left with important words. This class also throws an error if the elements in the job description column are not a string and does not have a length greater than 1.
+Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we created a class called Pre_Process(). This class will remove stop words, punctuations, etc. so that we're only left with important words. This class also throws an error if the elements in the job description column are not a string and does not have a length of at least 1.
 
 As we can see, before we processed the job description column, the descriptions have no punctuations, stopwords, etc and look like this:
 
