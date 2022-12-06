@@ -1,5 +1,5 @@
 # Classifying Fake Jobs
-## Group Members: Zoe Lu and Cheslea Chen
+## Group Members: Zoe Lu and Chelsea Chen
 
 ### This Project focuses on using a dataset from Kaggle with job posting information where we used the job description column to help us classify whether each job description is real or not. After cleaning the data, we used logistic regression support vector classification models to help us classify/ predict each job posting. 
 
@@ -62,4 +62,4 @@ When it comes to ethical implications, if this type of algorithm were to be used
 To better improve this project, some future things we can do to improve are to balance the dataset so that the data is not so heavily skewed with way more entries for non-fraudulent data than fraudulent data. We can also try out more models and train it on more data to ensure that our model can predict/ classify well to prevent misclassification from occuriring at a high rate. With a lower misclassifiction rate, we hope this well decrease the chances of someone applying to a fake job and getting scammed as well. 
 
 #### References and Acknowledgements
-We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted! We would also like to credit our STATS 101C professor Shrirong Xu's text cleaning We would also like the credit Kaggle for providing the data.
+We would like to thank our professor Harlin and our TA Nikita for all the help and guidance this quarted! We would also like to credit our STATS 101C professor Shirong Xu's text cleaning code that was used for a project in his class. We followed this tutorial but some things that we changed was that we put it into a class, simplified the code (took out lines we didn't need), and made it more efficient by using list comprehension. Lastly, we would like to credit Kaggle for providing the data.
