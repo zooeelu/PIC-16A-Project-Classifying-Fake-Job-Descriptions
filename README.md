@@ -19,24 +19,25 @@ The "Real or Fake" (https://www.kaggle.com/datasets/whenamancodes/real-or-fake-j
 The Demo File (demo_file) walks the audience through the process of some basic exploratory data analysis, cleaning textual data and later using it to build classifaction models to predict whether a job posting is fradulent or not. 
 
 The first step in this file was running some basic exploratory data analysis with barcharts showing the counts of different columns in the data. For example, two barcharts were created with the first one showing the counts (y axis) of job postings that were fake or real (x axis). The second barchart shows the counts (y axis) of employment type (x axis). From here we can see that the data has majority real job postings and most of them were full-time jobs.
-
-   <img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png">     <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
+<img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png">     <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
 
 
 Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we .......
 
 As we can see, before we processed the job description column, the descriptions have no punctuations, stopwords, etc and look like this:
-         <img width="979" alt="Screen Shot 2022-12-05 at 5 51 57 PM" src="https://user-images.githubusercontent.com/97188472/205789061-40a1b4f2-2d8f-421c-98f4-8d3e007ac49e.png">
+<img width="979" alt="Screen Shot 2022-12-05 at 5 51 57 PM" src="https://user-images.githubusercontent.com/97188472/205789061-40a1b4f2-2d8f-421c-98f4-8d3e007ac49e.png">
 
 After processing the job description columns, the descriptions no longer have stopwords, punctuations, etc and look like this:
-         <img width="987" alt="Screen Shot 2022-12-05 at 5 53 07 PM" src="https://user-images.githubusercontent.com/97188472/205789221-258f57f2-5c20-4934-9fd6-8438404c8aa1.png">
+<img width="987" alt="Screen Shot 2022-12-05 at 5 53 07 PM" src="https://user-images.githubusercontent.com/97188472/205789221-258f57f2-5c20-4934-9fd6-8438404c8aa1.png">
 
 We can also see in the word cloud below the most common types of words used. We did this by joining all the entries of the processed description column so that the WordCloud() function could count the frequencies of the words that appeared and generate the plot. 
-         <img width="686" alt="Screen Shot 2022-12-05 at 5 56 01 PM" src="https://user-images.githubusercontent.com/97188472/205789655-035c2e8c-899f-41d8-bf62-d27290b0d266.png">
+<img width="686" alt="Screen Shot 2022-12-05 at 5 56 01 PM" src="https://user-images.githubusercontent.com/97188472/205789655-035c2e8c-899f-41d8-bf62-d27290b0d266.png">
 
 After we processed the job descriptions, we were ready to use them in our classification models. 
 
-We created a function called ___ that would fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. 
+We created a function called ___ that would fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization. 
+<img width="347" alt="Screen Shot 2022-12-05 at 6 04 22 PM" src="https://user-images.githubusercontent.com/97188472/205790676-8cb56f39-0e08-4f19-99eb-91ef2a5cf594.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 04 44 PM" src="https://user-images.githubusercontent.com/97188472/205790723-4123ccc8-0b43-4ccf-b520-ae1a45406b12.png">
+
 
 ~~~~~insert results~~~~~~~~~~~
 
