@@ -37,7 +37,7 @@ We can also see in the word cloud below the most common types of words used. We 
 
 <img width="686" alt="Screen Shot 2022-12-05 at 5 56 01 PM" src="https://user-images.githubusercontent.com/97188472/205789655-035c2e8c-899f-41d8-bf62-d27290b0d266.png">
 
-After we processed the job descriptions, we then created a function called tfidf_train_test_split() that would calculate the importance of each word (TF-IDF) and also split our data into testing and training subsets. Below is an image of some of the words and their TF-IDF Scores.
+After we processed the job descriptions, we then created a function called tfidf_train_test_split() that would calculate the importance of each word (TF-IDF) and also split our data into testing and training subsets. An error is rasied if the inputs X and Y are not one dimension and if X[0] is not an instance of string. Below is an image of some of the words and their TF-IDF Scores.
 
 <img width="175" alt="Screen Shot 2022-12-05 at 6 18 34 PM" src="https://user-images.githubusercontent.com/97188472/205792480-1cc5e6f9-1f84-4cc6-9e20-dc8db97e9d6d.png">
 
