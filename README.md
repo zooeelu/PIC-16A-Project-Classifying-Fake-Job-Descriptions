@@ -36,11 +36,13 @@ We can also see in the word cloud below the most common types of words used. We 
 
 After we processed the job descriptions, we were ready to use them in our classification models. 
 
-We created a function called ___ that would fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization. 
+We created a function called .... that would fit a Support Vector Machine model and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
 <img width="347" alt="Screen Shot 2022-12-05 at 6 04 22 PM" src="https://user-images.githubusercontent.com/97188472/205790676-8cb56f39-0e08-4f19-99eb-91ef2a5cf594.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 04 44 PM" src="https://user-images.githubusercontent.com/97188472/205790723-4123ccc8-0b43-4ccf-b520-ae1a45406b12.png">
 
+Next we ran a logistic regression model by creating a function called ... and used it with the data that included the processed descriptions and whether a job posting was fake or not. The results are shown below along with a confusion matrix as a visualization: 
+<img width="342" alt="Screen Shot 2022-12-05 at 6 07 11 PM" src="https://user-images.githubusercontent.com/97188472/205791043-c977cc3d-9c81-4507-8fb9-8303b7b010ea.png"> <img width="288" alt="Screen Shot 2022-12-05 at 6 07 20 PM" src="https://user-images.githubusercontent.com/97188472/205791054-0aaabf1c-bd6f-4e65-a4d3-cdefae8024eb.png">
 
-~~~~~insert results~~~~~~~~~~~
+
 
 #### Scopes and Limitations
 For this project we ran logistic regression, support vector machine, and decision trees classification models. An obstacle we ran into in the beginning was cleaning/ conducting the pre-processing step for the job description column. These obstacles included things like taking out puncuation and removing stop words. This process took us a while to figure out but we eventually figured it out by reading up on documentation online as well as looking at lecture notes. Some limitations of this project was that the data we had was heavily skewed where most of the job postings were not fradulent. Only about 800 of the job postings were actually fraudulent and this may have skewed/ hindered our model's classification results. We also did not run more data on the models to better train them.
