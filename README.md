@@ -19,7 +19,8 @@ The "Real or Fake" (https://www.kaggle.com/datasets/whenamancodes/real-or-fake-j
 The Demo File (demo_file) walks the audience through the process of some basic exploratory data analysis, cleaning textual data and later using it to build classifaction models to predict whether a job posting is fradulent or not. 
 
 The first step in this file was running some basic exploratory data analysis with barcharts showing the counts of different columns in the data. For example, two barcharts were created with the first one showing the counts (y axis) of job postings that were fake or real (x axis). The second barchart shows the counts (y axis) of employment type (x axis). From here we can see that the data has majority real job postings and most of them were full-time jobs.
-<img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png">     <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
+
+<img width="339" alt="Screen Shot 2022-12-05 at 5 48 03 PM" src="https://user-images.githubusercontent.com/97188472/205788544-e381d2b8-ed32-420e-ae5a-fccf4d28c62a.png"> <img width="338" alt="Screen Shot 2022-12-05 at 5 48 16 PM" src="https://user-images.githubusercontent.com/97188472/205788569-60632999-d2fe-48d6-b515-615ba3740c30.png">
 
 
 Next, we cleaned the job description column since we will be using this column to help us classify whether or not a job posting is fake or not. To do this we .......
