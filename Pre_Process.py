@@ -33,14 +33,10 @@ class Pre_Process:
         """   
         if X is None:
             X = self.texts
-        try:
-            if (len(X) < 1):
-                raise Exception("Input must be at least 1")
-            elif (not isinstance(X[0], str)):
-                print("Input must be of type string") 
-                raise Exception("Input must be of type string")  
-        except:
-            print("An error has occured from you input. Make sure it is of type string and a vector of at least length 1")
+        if (len(X) < 1):
+            raise ValueError("Input must be at least 1")
+        elif (not isinstance(X[0], str)):
+            raise TypeError("Input must be of type string")  
 
     def remove_special_char(self, X): # takes an argument X and removes special characters (e.g. '-', '(')
         """
